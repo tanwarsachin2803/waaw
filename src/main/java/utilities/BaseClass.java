@@ -14,7 +14,7 @@ public class BaseClass {
     // total we are 10 guy, we are going to change in our local machine
 
     //method to select the browser
-	public String initiateBrowser(String browserName) {
+	public void initiateBrowser(String browserName) {
 		switch(browserName) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
