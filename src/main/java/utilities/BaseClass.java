@@ -1,26 +1,27 @@
 package utilities;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class BaseClass {
 
-    // total we are 10 guy, we are going to change in our local machine
+    public static WebDriver driver;
 
-    //method to select the browser
+    public static void main(String[] args) {
+
+    }
+
+    // Method to select the browser
+    public static void selectBrowser(String browserName) {
+        if (browserName.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+        } else if (browserName.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+        } else {
+            throw new IllegalArgumentException("Invalid browser name: " + browserName);
+        }
+    }
 
 
-    //method to open that browser by using WebDriverManager
-
-    // method to open the url of tht waaw project
-
-
-
-
-    // git branch
-    // git branch "branch_name"
-    // git branch
-    // git checkout "branch_name"
-
-
-    // git add filenames
-    // git commit -m "message_name"
-    // create pr from ur git hub
 }
