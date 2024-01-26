@@ -7,6 +7,16 @@ public class BaseClass {
     //method to select the browser
 
 
+    public WebDriver driver;
+
+    public WebDriver initiateBrowser(String browserName)
+    {
+        switch()
+    }
+
+
+
+
     //method to open that browser by using WebDriverManager
 
     // method to open the url of tht waaw project
