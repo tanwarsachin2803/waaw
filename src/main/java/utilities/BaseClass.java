@@ -14,23 +14,7 @@ public class BaseClass {
     // total we are 10 guy, we are going to change in our local machine
 
     //method to select the browser
-	public void initiateBrowser(String browserName) {
-		switch(browserName) {
-		case "chrome":
-			WebDriverManager.chromedriver().setup();
-			driver= new ChromeDriver();
-			break;
-		case "edge":
-			WebDriverManager.edgedriver().setup();
-			driver= new EdgeDriver();
-			break;
-		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
-			driver =new FirefoxDriver();
-			break;
-		default:
-			System.out.println("choose correct browser name");			
-		}
+	
 	}
 			
 	
