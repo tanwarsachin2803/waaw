@@ -20,6 +20,16 @@ public class BaseClass {
 	
 
 
+    public WebDriver driver;
+
+    public WebDriver initiateBrowser(String browserName)
+    {
+        switch()
+    }
+
+
+
+
     //method to open that browser by using WebDriverManager
 	
 
